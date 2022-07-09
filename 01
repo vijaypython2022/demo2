@@ -1,0 +1,42 @@
+1)ALGORITHM LEFT ROTATION:
+
+STEP 1: Start
+
+STEP 2: Reverse the first ‘r’ elements.
+
+STEP 3: Reverse the remaining ‘n-r’ elements.
+
+STEP 4: Reverse the entire array.
+
+STEP 5: Stop 
+
+Fn: reverse(arr,start,end)
+
+Ex=list=[1,2,3,4,5] left rotation
+
+r=rotation count
+n=list length
+
+Step 1: Reverse the first r elements.
+
+here r=2 then start 2 element interchange
+list=[2,1,3,4,5]
+
+Step 2: Reverse the remaining ‘n-r’ elements. Here n = 5 and
+ r =2, we have to reverse the remaining [3,4,5] three elements.
+ list=[2,1,5,4,3]
+
+ Step 3: Reverse the elements of the entire array.
+
+ANSWER=list=[3,4,5,1,2]
+
+2)ALGORITHM RIGHT ROTATION:
+list=[1,2,3,4,5]
+r=2
+n=5
+list=[1,2,3,5,4]
+list=[3,2,1,5,4]
+Ans=list=[4,5,1,2,3]
+
+
+
