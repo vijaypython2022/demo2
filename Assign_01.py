@@ -561,21 +561,128 @@
 # 44. Python | Program to accept the strings which contains all vowels
 # st="python is high level programing language"
 # vow=['a','e','i','o','u']
-# for i in vow:
-#     if i==vow:
+# for i in st:
+#     if i.__contains__(vow):
+#
 #         print("Yes, String content all vowels",)
 #     else:
 #         print("Not all vowels")
+#METHOD 1
+# a="python is Ahigh Olevel programing language"
+# v=["a","i","e","o","u",'A','E','I','O','U']
+# z=[i for i in a if i in v]
+# print(z)
+# ss=set(z)
+# if (len(ss)==len(v)):
+#     print("Yes")
+# else:
+#     print("No")
+#
+
+# str1 ="python is Ahigh Olevel programing language"
+#
+# v1 = ['A', 'E', 'I', '0', 'U' ]
+# v2 = ['a', 'e', 'i', 'o', 'u']
+# l1 = []
+# l2 = []
+#
+# for i in str1:
+# 	if i in v1 or i in v2:
+# 		l1.append(i)
+# 	else:
+# 		l2.append(i)
+#
+# print(" Accepted Vowels:- ", l1)
+# print(" Not Accepted:- ", l2)
+#method 2
+# a="python is high level programing language"
+# a=a.lower()
+# v=set("aeiou")
+# for i in a:
+#     if i not in v:
+#         print(a,"Not accepted")
+#         break
+# else:
+#     print(a,"Accepted")
+
+
 
 
 # 45. Python | Count the Number of matching characters in a pair of string
-# 46. Python program to count number of vowels using sets in given string Remove all duplicates from
-# a given string in Python
-# 47. Python | Program to check if a string contains any special character Generating random strings
-# until a given string is generated Find words which are greater than given length k
+# str1="Python"
+# s=str1.lower()
+# s1=set(s)
+# str2="pyp"
+# s2=set(str2)
+# count=0
+# for i in s1:
+#     for j in s2:
+#         if (i==j):
+#             count=count+1
+# print(count)
+
+#Method 2
+# str1="Python"
+# str2="pyp"
+# s=set(str1)
+# s1=set(str2)
+# print(len(s.intersection(s1)))
+
+
+# 46. Python program to count number of vowels using sets in given string
+# Remove all duplicates from a given string in Python
+# str1="Aishwarya"
+# s=str1.lower()
+# s=set(s)
+# v='aeiou'
+# count=0
+# for i in s:
+#     for j in v:
+#         if i==j:
+#             count+=1
+# print("Count of Vowels in string: ",count)
+
+
+# 47. Python | Program to check if a string contains any special
+# character Generating random strings
+# until a given string is generated Find words which are greater
+# than given length k
+
+
+
+
 # 48. Python program for removing i-th character from a string
+
 # 49. Python program to split and join a string
+# a="ab cd ef"
+# a1=a.split(" ")
+# a2="-".join(a1)
+# print(a2)
+
 # 50. Python | Check if a given string is binary string or not
+st="10901001"
+count=0
+for i in st:
+    if i=='0' or i=='1':
+        count=count+1
+if count==len(st):
+    print("String is binary")
+else:
+    print("Not a binary string")
+
+#         print("Not binary")
+# from collections import Counter
+#
+# x=Counter(st)
+# print(x)
+# m=0
+# for i in x.values():
+#     m+=i
+# print(m)
+# if len(st)==
+
+
+
 # 51. Python | Find all close matches of input string from a list
 # 52. Python program to find uncommon words from two Strings
 # 53. Python | Swap commas and dots in a String
