@@ -341,9 +341,36 @@
 
 
 # 19. Count occurrences of an element in a list
+#METHOD 1
+# def countlist(li,x):
+#     count=0
+#     for i in li:
+#         if i==x:
+#             count+=1
+#     print(x,"is occured on list",count,"times")
+# x='a'
+# #alphabate list
+# #li=['a','b','c','a','b','c']
+# #countlist(li,x)
+# #integer list
+# x=30
+# li=[10,20,10,20,30,40,30,30]
+# countlist(li,x)
 
+#METHOD 2
+# def countx(li,x):
+#     return li.count(x)
+# x=20
+# li=[10,20,10,20,30,40,30,30]
+# print(x,"occured in list",countx(li,x))
 
-
+#METHOD 3
+# from collections import Counter
+# li=[10,20,10,20,30,40,30,30]
+# x=20
+# d=Counter(li)
+# print("Using collection counter")
+# print(x,"is occured in list",d[x])
 # 20. Python program to find sum of elements in list
 #1)using loop
 # list1=[4,6,7,2]
@@ -461,13 +488,6 @@
 # odd=len(list(filter(lambda i:i%2!=0,li)))
 # print(odd)
 
-
-
-
-
-
-
-
 # 30. Python program to print positive numbers in a list
 # li=[-1,0,2,-3,4,-5,6,7,8,9,10,12]
 # l=list(filter(lambda i:i>0,li))
@@ -488,7 +508,23 @@
 #         print(i)
 
 # 33. Python program to print all negative numbers in a range
+li=[]
+for i in range(-1,-8):
+    if i<0:
+        li.append(i)
+print(li)
 # 34. Python program to count positive and negative numbers in a list
+# li=[-1,-2,4,7,-6,3,4]
+# pos=0
+# neg=0
+# for i in li:
+#     if i>=0:
+#         pos+=1
+#     else:
+#         neg+=1
+# print("Positive count is:",pos)
+# print("Negetive count is:",neg)
+
 # 35. Remove multiple elements from a list in Python
 # 36. Python | Remove empty tuples from a list
 # 37. Python | Program to print duplicates from a list of integers
@@ -672,14 +708,6 @@
 #     print("Not a binary string")
 
 #METHOD 2
-st=10031001
-d=(list(st))
-# print(d)
-for i in d:
-    if i is True or i is False:
-        print("String is binary")
-    else:
-        print("Not binary")
 
 
 
