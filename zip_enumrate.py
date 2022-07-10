@@ -43,4 +43,13 @@ print("After Unzip values",end="")
 print(s2)
 
 
-#ENUMRATE IN PYTHON
+#ENUMERATE() IN PYTHON
+# when we iterate thing sometimes we need to count the itration.
+# for that we use python inbuild enumerate() method.
+# neumerate() method add a counter to an iterable and return it in form of
+# enumerating object.this object we can directly use in for loop and convert
+# list of tuple.
+# Syntax: enumerate(iterable, start=0)
+colors=['red','blue','green','purple','pink','black','white']
+
+

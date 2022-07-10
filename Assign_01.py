@@ -660,7 +660,7 @@
 # print(a2)
 
 # 50. Python | Check if a given string is binary string or not
-st="10901001"
+st="1001001"
 count=0
 for i in st:
     if i=='0' or i=='1':
