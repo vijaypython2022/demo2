@@ -660,15 +660,32 @@
 # print(a2)
 
 # 50. Python | Check if a given string is binary string or not
-st="1001001"
-count=0
-for i in st:
-    if i=='0' or i=='1':
-        count=count+1
-if count==len(st):
-    print("String is binary")
-else:
-    print("Not a binary string")
+#METHOD 1
+# st="1001001"
+# count=0
+# for i in st:
+#     if i=='0' or i=='1':
+#         count=count+1
+# if count==len(st):
+#     print("String is binary")
+# else:
+#     print("Not a binary string")
+
+#METHOD 2
+st=10031001
+d=(list(st))
+# print(d)
+for i in d:
+    if i is True or i is False:
+        print("String is binary")
+    else:
+        print("Not binary")
+
+
+
+
+
+
 
 #         print("Not binary")
 # from collections import Counter

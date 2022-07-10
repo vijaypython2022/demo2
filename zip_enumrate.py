@@ -29,18 +29,18 @@
 # {'Realme': 11999, 'oppo': 12999, 'samsung': 16799, 'redmi': 13599}
 
 #HOW TO UNZIP
-
-l=["vijay","ajay","santosh"]
-s=(10,20,30)
-#using zip() map the value each name
-student=zip(l,s)
-student=list(student)
-print("zip result:",student)
-s1,s2=zip(*student)
-print("After Unzip values",end="")
-print(s1)
-print("After Unzip values",end="")
-print(s2)
+#
+# l=["vijay","ajay","santosh"]
+# s=(10,20,30)
+# #using zip() map the value each name
+# student=zip(l,s)
+# student=list(student)
+# print("zip result:",student)
+# s1,s2=zip(*student)
+# print("After Unzip values",end="")
+# print(s1)
+# print("After Unzip values",end="")
+# print(s2)
 
 
 #ENUMERATE() IN PYTHON
@@ -51,5 +51,12 @@ print(s2)
 # list of tuple.
 # Syntax: enumerate(iterable, start=0)
 colors=['red','blue','green','purple','pink','black','white']
+days=['sun','mon','tues','wed','thus','fri','sat']
+print(list(enumerate(colors,0)))
+output:
+[(0,'red'),(1,'blue'),(2,'green'),(3,'purple'),(4,'pink'),(5,'black'),(6,'white')]
+
+
+
 
 

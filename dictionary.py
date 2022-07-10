@@ -1,14 +1,14 @@
 #Acess dictinary element keys(),values(),items()
 
-# d={"a":1,"b":2,"c":3,"d1":{"x":12,"y":13}}
-# x=d.fromkeys("c",3)
-# print(x)
-# for i in d.keys():
-#     print("Keys",i)
-# for i in d.values():
-#     print("Values",i)
-# for i in d.items():
-#     print(i)
+d={"a":1,"b":2,"c":3,"d1":{"x":12,"y":13}}
+x=d.fromkeys("c",3)
+print(x)
+for i in d.keys():
+    print("Keys",i)
+for i in d.values():
+    print("Values",i)
+for i in d.items():
+    print(i)
 # output:
 # ('a', 1)
 # ('b', 2)
@@ -23,14 +23,14 @@
 # output :{'apple': 'fruits', 'banana': 'fruits', 'orange': 'fruits'}
 
 #create dictionary using zip() of two list
-mobile=["Realme","oppo","samsung","redmi"]
-price=[11999,12999,16799,13599]
-new_dict={
-    mobile:price for mobile,price in zip(mobile,price)
-}
-print(new_dict)
-output:
-{'Realme': 11999, 'oppo': 12999, 'samsung': 16799, 'redmi': 13599}
+# mobile=["Realme","oppo","samsung","redmi"]
+# price=[11999,12999,16799,13599]
+# new_dict={
+#     mobile:price for mobile,price in zip(mobile,price)
+# }
+# print(new_dict)
+# output:
+# {'Realme': 11999, 'oppo': 12999, 'samsung': 16799, 'redmi': 13599}
 
 
 #popitem() demo- it pop key-value pair randomly
@@ -52,19 +52,19 @@ output:
 # {'banana': 'fruits', 'orange': 100, 'greps': 200}
 
 # nested dictonary use for loop
-mycollege = {
-    "developer": {
-        "course": "python",
-        "branch": "IT"},
-    "science": {
-        "course": "bcs",
-        "branch": "computer"
-    },
-    "engineers": {
-        "course": "BE",
-        "branch": "civil"
-    }
-}
+# mycollege = {
+#     "developer": {
+#         "course": "python",
+#         "branch": "IT"},
+#     "science": {
+#         "course": "bcs",
+#         "branch": "computer"
+#     },
+#     "engineers": {
+#         "course": "BE",
+#         "branch": "civil"
+#     }
+# }
 #Access specific value 'python'
 # print(mycollege['developer']['course'])
 #
