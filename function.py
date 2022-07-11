@@ -32,7 +32,7 @@ def fun(x,y=50):
 fun(10)
 
 
-# In[5]:
+
 
 
 #veriable length non-keyword argument
@@ -43,7 +43,7 @@ def no_argument(*argv,x):
 no_argument('hi','vijay','jagtap',x=10)
 
 
-# In[16]:
+
 
 
 #veriable length keyword argument use when length unknown
@@ -54,7 +54,7 @@ def user(**kwargs):
 user('hi','vijay','jagtap',[1,2,3,4])
 
 
-# In[6]:
+
 
 
 #function are object:  python function are first class object
@@ -66,7 +66,7 @@ user=emp
 print(user("Hi hellow i am alias call"))
 
 
-# In[6]:
+
 
 
 #can be pass as argument to other function
@@ -81,7 +81,7 @@ greet(shout)
 greet(whisper)
 
 
-# In[5]:
+
 
 
 # function can return another function
@@ -95,7 +95,7 @@ print(add_15(10))
 print(first_fun(15)(10))
 
 
-# In[8]:
+
 
 
 #RETURNING MULTIPLE VALUE FROM A FUNCTION
@@ -111,7 +111,7 @@ for i in t:
     print(i)
 
 
-# In[14]:
+
 
 
 #function inside function
@@ -125,7 +125,7 @@ def f1(): #outer function
 f1()
 
 
-# In[3]:
+
 
 
 #Anonymous function

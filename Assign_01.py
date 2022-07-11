@@ -371,6 +371,7 @@
 # d=Counter(li)
 # print("Using collection counter")
 # print(x,"is occured in list",d[x])
+
 # 20. Python program to find sum of elements in list
 #1)using loop
 # list1=[4,6,7,2]
@@ -378,13 +379,16 @@
 # for i in list1:
 #     res=res+i
 # print(res)
+
 # #2) using sum()
 # list1=[4,6,7,2]
 # print("Using sum()",sum(list1))
+
 # #3)Using lambda
 # from functools import reduce
 # list1=[4,6,7,2]
 # print("Using Lambda",reduce(lambda x,y:x+y,list1))
+
 # #4) while loop
 # list1=[4,6,7,2]
 # b=len(list1)-1
@@ -393,8 +397,6 @@
 #     count+=list(b)
 #     b-=1
 # print("using while loop",count)
-#
-
 
 
 # 21. Python | Multiply all numbers in the list
@@ -508,11 +510,21 @@
 #         print(i)
 
 # 33. Python program to print all negative numbers in a range
+#Method 1
 li=[]
-for i in range(-1,-8):
+for i in range(-8,5):
     if i<0:
         li.append(i)
-print(li)
+print(*li)
+
+#Method 2
+a=-4
+b=5
+out=[i for i in range(a,b+1) if i<0]
+  # print the all negative numbers
+print(*out)
+
+
 # 34. Python program to count positive and negative numbers in a list
 # li=[-1,-2,4,7,-6,3,4]
 # pos=0
@@ -731,6 +743,7 @@ print(li)
 # 51. Python | Find all close matches of input string from a list
 # 52. Python program to find uncommon words from two Strings
 # 53. Python | Swap commas and dots in a String
+
 # 54. Python | Permutation of a given string using inbuilt function
 # 55. Python | Check for URL in a String Execute a String of Code in
 # 56. Python String slicing in Python to rotate a string
