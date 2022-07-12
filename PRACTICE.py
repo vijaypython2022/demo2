@@ -49,10 +49,32 @@
 # print("After swaping values of A:",a,"and B:",b)
 
 #swap two veriable without using third variable
-a=10
-b=20
-a,b=b,a
-print("After swaping values of A:",a,"and B:",b)
+# a=10
+# b=20
+# a,b=b,a
+# print("After swaping values of A:",a,"and B:",b)
 
+#sum of list using lambda
+# from functools import reduce
+# li=[4,8,4]
+# print(reduce(lambda x,y:x+y,li))
+#
+# #sum of two number use lambda
+# s=lambda a,b:a+b
+# print(s(10,20))
+#
+# #count the string length use lambda
+# name="vijay"
+# print(reduce(lambda x,y:x+1,name,0))
+
+from difflib import get_close_matches
+
+def find_close_matches(text,seq):
+    print(get_close_matches(text,seq))
+seq="python is programing language"
+s=seq.split(" ")
+#seq=["pyt","python","pypdf","numpy","list","dict","jpython","p"]
+txt="pyt"
+find_close_matches(txt,s)
 
 

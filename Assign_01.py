@@ -208,6 +208,12 @@
 
 
 # 13. Python program to remove Nth occurrence of the given word
+#METHOD 1
+# st='python team brainworks aa'
+# print(st.translate({ord('a'):None})) #ord() get the unicode of the letter
+#USING UNICODE REPLACE THE NONE VALUE USING DICT KEY VALUE
+
+#remove dublicate word form list
 # def remove_Nth(list,word,nth):
 #     count=0
 #     for i in range(0,len(list)):
@@ -228,14 +234,6 @@
 # True
 # ['sub', 'for']
 #***********************************************
-# a=input("Enter string \n")
-# d={}
-# l=len(a)
-# print("length is:",l)
-# for x in a:
-#     d[x]=d.get(x,0)+1
-# for k,v in d.items():
-#     print("Occured",k,"Times",v)
 
 # 14. Python | Ways to find length of list
 # li=[1,'A',2,'B',3,'C',4]
@@ -352,6 +350,7 @@
 # #alphabate list
 # #li=['a','b','c','a','b','c']
 # #countlist(li,x)
+
 # #integer list
 # x=30
 # li=[10,20,10,20,30,40,30,30]
@@ -371,6 +370,16 @@
 # d=Counter(li)
 # print("Using collection counter")
 # print(x,"is occured in list",d[x])
+
+#METHOD 4
+# a=input("Enter string \n")
+# d={}
+# l=len(a)
+# print("length is:",l)
+# for x in a:
+#     d[x]=d.get(x,0)+1
+# for k,v in d.items():
+#     print("Occured",k,"Times",v)
 
 # 20. Python program to find sum of elements in list
 #1)using loop
@@ -432,7 +441,6 @@
 # def Sec_Largest(arr):
 #     secondLargest = arr[0]
 #     largest = arr[0]
-#
 #     for i in range(len(arr)):
 #         if arr[i] > largest:
 #             largest = arr[i]
@@ -511,18 +519,18 @@
 
 # 33. Python program to print all negative numbers in a range
 #Method 1
-li=[]
-for i in range(-8,5):
-    if i<0:
-        li.append(i)
-print(*li)
-
-#Method 2
-a=-4
-b=5
-out=[i for i in range(a,b+1) if i<0]
-  # print the all negative numbers
-print(*out)
+# li=[]
+# for i in range(-8,5):
+#     if i<0:
+#         li.append(i)
+# print(*li)
+#
+# #Method 2 list comprehension
+# a=-4
+# b=5
+# out=[i for i in range(a,b+1) if i<0]
+#   # print the all negative numbers
+# print(*out)
 
 
 # 34. Python program to count positive and negative numbers in a list
@@ -565,7 +573,7 @@ print(*out)
 # x=st.replace('python',"")
 # print(x)
 
-#METHOD 2
+#METHOD 3
 # st='python team brainworks aa'
 # print(st.translate({ord('a'):None})) #ord() get the unicode of the letter
 #USING UNICODE REPLACE THE NONE VALUE USING DICT KEY VALUE
@@ -594,6 +602,7 @@ print(*out)
 
 # 42. Python|Check if a Substring is Present in a Given String Find length of a string in python (4
 # ways)
+
 # 43. Python program to print even length words in a string
 
 
@@ -628,7 +637,6 @@ print(*out)
 #
 
 # str1 ="python is Ahigh Olevel programing language"
-#
 # v1 = ['A', 'E', 'I', '0', 'U' ]
 # v2 = ['a', 'e', 'i', 'o', 'u']
 # l1 = []
@@ -741,9 +749,9 @@ print(*out)
 
 
 # 51. Python | Find all close matches of input string from a list
+name=["python",""]
 # 52. Python program to find uncommon words from two Strings
 # 53. Python | Swap commas and dots in a String
-
 # 54. Python | Permutation of a given string using inbuilt function
 # 55. Python | Check for URL in a String Execute a String of Code in
 # 56. Python String slicing in Python to rotate a string

@@ -227,7 +227,7 @@ print(result1)
 # In[16]:
 
 
-#without reduce function
+#sum of list without reduce function
 sum=0
 lst=[1,2,3,4,5]
 for i in lst:
@@ -238,7 +238,7 @@ print(sum)
 # In[17]:
 
 
-#use reduce
+#sum of list use reduce function
 import functools
 lst=[1,2,3,4,5]
 def abc(x,y):
@@ -250,11 +250,11 @@ print(result)
 # In[18]:
 
 
-#use reduce+lambda
+#sum of list use reduce+lambda
 import functools
 lst=[1,2,3,4,5]
-print(functools.reduce(lambda a,b:a+b,lst))
-
+print(functools.reduce(lambda a,b:a+b,lst)
+print()
 
 # In[20]:
 
