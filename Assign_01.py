@@ -160,9 +160,33 @@
 #
 # print(li)
 
-
+#METHOD 3 using numpy
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4, 5, 6])
+#
+# n1,n2 = np.array_split(arr,2)
+#
+# print(n2,n1)
+#
+# #output:
+# [4 5 6] [1 2 3]
 
 # 10. Python Program for Find reminder of array multiplication divided by n
+# import numpy as np
+# list1=[2,3,7,60]
+# list2=[2,1,2,2]
+# print(list1)
+# print(list2)
+# rem=np.floor_divide(list1,list2)
+# print("Remender of list",list(rem))
+
+
+
+
+
+
+
 # list3=[65,98,88,45,78,11]
 # rem=[]
 # mul=[]
@@ -436,7 +460,6 @@
 # li=[18,17,150,19,22,7,4,]
 # print("Max number is:",large(li))
 
-
 # 24. Python program to find second largest number in a list
 # def Sec_Largest(arr):
 #     secondLargest = arr[0]
@@ -452,6 +475,7 @@
 # print(Sec_Largest([10, 20, 4, 45, 99]))
 
 # 25. Python program to print even numbers in a list
+#METHOD 1
 # list1=[1,2,3,4,5,6,7]
 # for i in list1:
 #     if (i%2==0):
@@ -459,17 +483,40 @@
 # list1=[1,2,3,4,5,6,7]
 # print(list(filter(lambda i :i%2==0,list1)))
 
+#METHOD 2
+# list1=[1,2,3,4,5,6,7]
+# i=2
+# while i<len(list1):
+#     print(i)
+#     i+=2
+
 # 26. Python program to print odd numbers in a List
 # list1=[1,2,3,4,5,6,7]
-# # for i in list1:
-# #     if (i % 2 != 0):
-# #         print(i)
-# #using lambda
-# #print(list(filter(lambda i :i%2!=0,list1)))
-# #list comprehension
+# for i in list1:
+#     if (i % 2 != 0):
+#         print(i)
+
+#WHILE LOOP
+# list1=[1,2,3,4,5,6,7]
+# i=1
+# while i<len(list1):
+#     print(i)
+#     i+=2
+
+# using lambda
+#list1=[1,2,3,4,5,6,7]
+#print(list(filter(lambda i :i%2!=0,list1)))
+
+#list comprehension
+#list1=[1,2,3,4,5,6,7]
 # x=[i for i in list1 if i%2!=0]
 # print(x)
 
+#USE WHILE LOOP
+# a=2
+# while a<=20:
+#     print(a)
+#     a+=2
 
 
 
@@ -749,10 +796,69 @@
 
 
 # 51. Python | Find all close matches of input string from a list
-name=["python",""]
+from difflib import get_close_matches
+
+# def find_close_matches(text,seq):
+#     print(get_close_matches(text,seq))
+# seq="python is programing language"
+# s=seq.split(" ")
+# #seq=["pyt","python","pypdf","numpy","list","dict","jpython","p"]
+# txt="pyt"
+# find_close_matches(txt,s)
+
+
 # 52. Python program to find uncommon words from two Strings
+# def uncommon(A, B):
+#     a = [i for i in "".join(B).split() if i not in "".join(A).split()]
+#     return a
+# # Driver code
+# A = "python is"
+# B = "python is was"
+# print(uncommon(A, B))
+#
+
+
+
+
+
+
+
+x = "python is"
+y = "python is was"
+a = [i for i in "".join(y).split() if i not in "".join(x).split()]
+print(a)
+
 # 53. Python | Swap commas and dots in a String
-# 54. Python | Permutation of a given string using inbuilt function
+# def replace(x):
+#     x=x.replace(",","temp")
+#     x=x.replace(".",",")
+#     x=x.replace("temp",".")
+#     return x
+# a="1 ,2,3, 5,6,7,8."
+# print(replace(a))
+#
+# Method 2
+# a="my name is arjun, favourite game cricket."
+# b=[]
+# for i in a:
+#     if i==",":
+#         b.append(".")
+#     elif i==".":
+#         b.append(",")
+#     else:
+#         b.append(i)
+# c="".join(b)
+# 54. Python | Permutation of a given string using inbuilt functionfrom itertools import permutations
+# #
+# # def show(str):
+# #     a = permutations(str)
+# #     for i in a:
+# #         x = ''.join(i)
+# #         print(x,end=" ")
+# #
+# # name = input("enter the string want to permut:-")
+# # show(name)
+
 # 55. Python | Check for URL in a String Execute a String of Code in
 # 56. Python String slicing in Python to rotate a string
 # 57. String slicing in Python to check if a string can become empty by recursive deletion

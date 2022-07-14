@@ -107,9 +107,10 @@ for i in d.items():
 
 # update(dict) method or update(key-value)
 # mobile={"model":10,"version":1.3}
-# print("Original Dict:",mobile)
 # company={"oppo":"India"}
+# print("Original Dict:",mobile)
+
 # mobile.update(company) #merge two dict
 # mobile.update(price=11999) #add key-value pair to existing dict
-# mobile.update(version='1.5') #update the version value
+# mobile.update(version='1.5') #update the key version value
 # print("Updated Dict:",mobile)

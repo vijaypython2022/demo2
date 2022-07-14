@@ -54,3 +54,38 @@ import numpy as np
 # rem=np.floor_divide(list1,list2)
 # print("Remender of list",list(rem))
 
+
+
+
+
+
+
+
+# Assignment 9.swap the position of element
+#
+# import numpy as np
+#
+# arr = np.array([1, 2, 3, 4, 5, 6])
+#
+# n1,n2 = np.array_split(arr,2)
+#
+# print(n2,n1)
+#
+# #output:
+# [4 5 6] [1 2 3]
+
+import numpy as np
+
+# arr = np.array([1, 2, 3, 4, 5, 6])
+# print(list(arr[3:5])+(arr[0:2]))  # addition of element
+
+# arr = np.array([1, 2, 3, 4, 5, 6, 7])
+#
+# print(arr[::2])
+# output:
+# [1 3 5 7]
+
+a=2
+while a<=20:
+    print(a)
+    a+=2

@@ -67,14 +67,42 @@
 # name="vijay"
 # print(reduce(lambda x,y:x+1,name,0))
 
-from difflib import get_close_matches
+# from difflib import get_close_matches
+#
+# def find_close_matches(text,seq):
+#     print(get_close_matches(text,seq))
+# seq="python is programing language"
+# s=seq.split(" ")
+# #seq=["pyt","python","pypdf","numpy","list","dict","jpython","p"]
+# txt="pyt"
+# find_close_matches(txt,s)
 
-def find_close_matches(text,seq):
-    print(get_close_matches(text,seq))
-seq="python is programing language"
-s=seq.split(" ")
-#seq=["pyt","python","pypdf","numpy","list","dict","jpython","p"]
-txt="pyt"
-find_close_matches(txt,s)
 
+# Print the obtained permutations
+#Assignment 54
 
+# def get_permutation(string, i=0):
+#     if i == len(string):
+#         print("".join(string),end="")
+#     count=0
+#     for j in range(i, len(string)):
+#         count += 1
+#         words = [c for c in string]
+#
+#         # swap
+#         words[i], words[j] = words[j], words[i]
+#
+#         get_permutation(words, i + 1)
+#     print(count)
+# print(get_permutation('yup'))
+
+#count each char in string
+a="abcabb"
+# a=input("Enter string \n")
+d={}
+l=len(a)
+print("length is:",l)
+for x in a:
+    d[x]=d.get(x,0)+1
+for k,v in d.items():
+    print("Occured",k,"Times",v)
