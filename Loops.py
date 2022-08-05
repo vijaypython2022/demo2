@@ -69,12 +69,14 @@ else:
 #Nested Loops-A nested loop is a loop inside a loop.
 #The inner loop will be executed one time for each iteration of the outer loop
 
-name= ["vijay", "amol", "sam"]
-designation = ["tester", "developer", "designer"]
-
+name= ["vijay", "amol", "sam","sandip","deepak","raj","akash","tejesh","pravin","youvraj","shami"]
+designation = ["captain", "voice captain", "normal"]
+count=0
 for x in name:
   for y in designation:
+    count+=1
     print(x, y)
+print(count)
 
 output:
 vijay tester

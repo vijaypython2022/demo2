@@ -114,3 +114,29 @@ for i in d.items():
 # mobile.update(price=11999) #add key-value pair to existing dict
 # mobile.update(version='1.5') #update the key version value
 # print("Updated Dict:",mobile)
+
+
+#dictionary comprehension
+s={x:x**2 for x in range(1,10,3)}
+print(s)
+
+
+
+
+#get user input Calculate Average of selected student
+n = int(input())
+student_marks ={}
+for i in range(n):
+    name,*marks = input().split()
+    student_marks[name]=marks
+st=input("Enter name of student to calculate avarage:")
+if (st in student_marks.keys()):
+    print("Marks is:",student_marks[st])
+    values=student_marks[st]
+    total=[float(x) for x in values]
+    sub=len(total)
+    total_mark=sum(total)
+    res=total_mark/sub
+    print("Percentage is :",res)
+
+

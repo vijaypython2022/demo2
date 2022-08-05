@@ -817,16 +817,11 @@ from difflib import get_close_matches
 # print(uncommon(A, B))
 #
 
-
-
-
-
-
-
-x = "python is"
-y = "python is was"
-a = [i for i in "".join(y).split() if i not in "".join(x).split()]
-print(a)
+#
+# x = "python is"
+# y = "python is was"
+# a = [i for i in "".join(y).split() if i not in "".join(x).split()]
+# print(a)
 
 # 53. Python | Swap commas and dots in a String
 # def replace(x):
@@ -863,6 +858,27 @@ print(a)
 # 56. Python String slicing in Python to rotate a string
 # 57. String slicing in Python to check if a string can become empty by recursive deletion
 # 58. Python Counter| Find all duplicate characters in string Dictionary Programs:
+# a="python language python code"
+# b=a.split()
+# print(b)
+# c=[]
+# for i in b:
+#     d=b.count(i)
+#     if d>1 and i not in c:
+#         c.append(i)
+# print(c)
+
+# a="python language python code"
+# b=a.split()
+# d={}
+# for i in b:
+#     d[i]=d.get(i,0)+1
+# print(d)
+# for k, v in d.items():
+#     if v>1:
+#         print(k)
+
+
 # 59. Python | Sort Python Dictionaries by Key or Value Handling missing keys in
 # 60. Python dictionaries Python dictionary with keys having multiple inputs
 # 61. Python program to find the sum of all items in a dictionary

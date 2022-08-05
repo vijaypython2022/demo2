@@ -42,6 +42,8 @@
 # x=set()
 # x=union(s,s2)
 # print(x)
+
+#
 # isupperset()=Returns True if this set contains another set
 
 # issubset()=Returns True if another set contains this set
@@ -67,7 +69,6 @@
 #
 # symmetric_difference_update()=Updates a set with the symmetric difference of itself and another
 
-# s=set()
-# print(s)
-# s.add(['50'])
-# print(s)
+#dictionary comprehension
+s={x:x**2 for x in range(1,10,3)}
+print(s)

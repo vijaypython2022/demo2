@@ -101,7 +101,49 @@ but there might be more. For example, if N=3, your list might be 3, 1, 1, 3 or i
 Print out a number that appears in the list more than once.
 
 
-DURGAOSOFT INTERVIEW QUESTIONS:
+INTERVIEW QUESTIONS:
+Tell me about your self.
 1.WHAT IS DIFF BEETWEEN is operator AND == operator in python?
+2.What is diff between list and tuple?
+3.Why tuple faster than list?
+Tuples are stored in a single block of memory.
+Tuples are immutable so, It doesn't require extra space to store new objects.
+Lists are allocated in two blocks: the fixed one with all the Python object
+information and a variable-sized block for the data.It is the reason creating
+a tuple is faster than List.
 
 
+4.can we pass dictionary key as list element?
+list elment is duplicate and dictionary key not accept duplicate element. hence
+we can not pass list as a dict key.
+
+5.tuple is immutable?
+yes tuple is immutabel
+6.what is init? how to write syntax?what is use of init
+init is class contructor.
+7.diff between iterator and generator?
+8.how many times yield use in generator?
+9.what is *kw and **kw in function?
+10.what is return type of kw* and **kw?
+11.what is polymorphism
+12.what is inheritance?ho many types of inheritance?
+13.what is multiple inheritance?
+14.if two parents class have same method which method execute first in child class?
+15.tell me fetch command
+16.how to push repo on remote
+17.take unsorted list and sort the list without using inbuilt function.
+number=[1,5,6,9,0]
+for i in range(len(number)):
+  for j in range(i+1,len(number)):
+    if number[i]<number[j]:
+      number[i],number[j]=number[j],number[i]
+print(number)
+
+
+18.reverse the string without inbuilt function.
+def reverse(s):
+    str = ""
+    for i in s:
+        str = i + str
+    return str
+print(reverse("python"))

@@ -96,13 +96,21 @@
 #     print(count)
 # print(get_permutation('yup'))
 
-#count each char in string
-a="abcabb"
-# a=input("Enter string \n")
-d={}
-l=len(a)
-print("length is:",l)
-for x in a:
-    d[x]=d.get(x,0)+1
-for k,v in d.items():
-    print("Occured",k,"Times",v)
+#reverse the string
+#
+# def rev(s):
+#     str = ""
+#     for i in s:
+#         str = i + str
+#     return str
+# print(rev("python"))
+
+player= ["vijay", "amol", "sam","sandip","deepak","raj",
+       "akash","tejesh","pravin","youvraj","shami"]
+pos = ["captain", "voice captain", "normal"]
+count=0
+for x in pos:
+  for y in player:
+    count+=1
+    print(x,y)
+print(count)
