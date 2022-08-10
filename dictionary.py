@@ -139,4 +139,9 @@ if (st in student_marks.keys()):
     res=total_mark/sub
     print("Percentage is :",res)
 
-
+# find the student who's marks second lowest.
+marks = {"Ajay": 55, "Rahul": 50, "santosh": 45, "Arjun": 35}
+second_min = list(sorted(marks.values()))[1]
+for k, v in marks.items():
+    if v == second_min:
+        print(k)

@@ -1,4 +1,4 @@
-#sort element without inbuild function
+# sort element without inbuild function
 # li=[4,8,3,7,1,3]
 # for i in range(6):
 #     for j in range(i+1,6):
@@ -7,14 +7,14 @@
 #
 # print(li)
 
-#reverse string using for loop
+# reverse string using for loop
 # st="vijay"
 # a=""
 # for i in st:
 #     a=i+a
 # print(a)
 
-#reverse the string using while loop
+# reverse the string using while loop
 # st="vijay"
 # a=""
 # while l>=0:
@@ -38,7 +38,7 @@
 #     print(a)
 # print(a)
 #
-#sort the list usinf two for loop
+# sort the list usinf two for loop
 # li=[4,5,1,3,2]
 # for i in range(len(li)):
 #     for j in range(i+1,len(li)):
@@ -49,7 +49,7 @@
 #
 # for i in li:
 #     if li[i]
-#get user input Calculate Average of selected student
+# get user input Calculate Average of selected student
 
 # n = int(input("Enter no. of record:"))
 # student_marks ={}
@@ -95,18 +95,47 @@
 # ob.m3()
 # Test.m3(45)
 
+# find keys having duplicate values.
+# from itertools import chain
+#
+# di = {}
+# for _ in range(int(input())):
+#     name = input()
+#     score = float(input())
+#     di[name] = score
+# print(di)
+# li = {}
+# for k, v in di.items():
+#     li.setdefault(v, set()).add(k)
+# # res=[k for k,v in li.items() if len(v)>1] print duplicate values
+# res = set(chain.from_iterable(v for k, v in li.items() if len(v) > 1))
 
-for _ in range(int(input())):
-        name = input()
-        score = float(input())
+
+# find the second lowest dict values
+from itertools import chain
+# di = {}
+# for _ in range(int(input())):
+#     name = input()
+#     score = float(input())
+#     di[name] = score
+# print(di)
+# find the student who's marks second lowest.
+marks = {"Ajay": 55, "Rahul": 50, "santosh": 45, "Arjun": 35}
+second_min = list(sorted(marks.values()))[1]
+for k, v in marks.items():
+    if v == second_min:
+        print(k)
 
 
+#res = set(chain.from_iterable(v for k,v in di.items() if second_min in di.values()))
+#print(res)
+def print_full_name(first_name, last_name):
+    # Write your code here
+    s = 'Hellow {} {}! You just delved into python.'.format(first_name, last_name)
+    print(s)
 
-
-
-
-
-
-
-
+if __name__ == '__main__':
+    first_name = input()
+    last_name = input()
+    print_full_name(first_name, last_name)
 

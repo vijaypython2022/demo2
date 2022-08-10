@@ -25,8 +25,30 @@ while i < 6:
 # 2
 # 4
 # 5
-# 6
+#6
+#print * pattern
+i=1
+while i<=5:
+  print(i*"*")
+  i+=1
+# output:
+# *
+# **
+# ***
+# ****
+# *****
 
+i=6
+while i>=0:
+  print(i*"*")
+  i-=1
+#output
+# ******
+# *****
+# ****
+# ***
+# **
+# *
 #else condition
 i = 1
 while i < 6:
@@ -35,13 +57,13 @@ while i < 6:
 else:
   print("i is no longer less than 6")
 
-output:
-1
-2
-3
-4
-5
-i is no longer less than 6
+# output:
+# 1
+# 2
+# 3
+# 4
+# 5
+# i is no longer less than 6
 
 #ii) For loop-A for loop is used for iterating over a sequence
 # (that is either a list, a tuple, a dictionary, a set, or a string).
@@ -78,16 +100,16 @@ for x in name:
     print(x, y)
 print(count)
 
-output:
-vijay tester
-vijay developer
-vijay designer
-amol tester
-amol developer
-amol designer
-sam tester
-sam developer
-sam designer
+# output:
+# vijay tester
+# vijay developer
+# vijay designer
+# amol tester
+# amol developer
+# amol designer
+# sam tester
+# sam developer
+# sam designer
 
 #The pass Statement
 #if the for loop have no content we can use pass statement for avoding error
