@@ -145,3 +145,4 @@ second_min = list(sorted(marks.values()))[1]
 for k, v in marks.items():
     if v == second_min:
         print(k)
+

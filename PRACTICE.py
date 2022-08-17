@@ -104,13 +104,22 @@
 #         str = i + str
 #     return str
 # print(rev("python"))
+#
+# player= ["vijay", "amol", "sam","sandip","deepak","raj",
+#        "akash","tejesh","pravin","youvraj","shami"]
+# pos = ["captain", "voice captain", "normal"]
+# count=0
+# for x in pos:
+#   for y in player:
+#     count+=1
+#     print(x,y)
+# print(count)
 
-player= ["vijay", "amol", "sam","sandip","deepak","raj",
-       "akash","tejesh","pravin","youvraj","shami"]
-pos = ["captain", "voice captain", "normal"]
-count=0
-for x in pos:
-  for y in player:
-    count+=1
-    print(x,y)
-print(count)
+#sum of natural number using recursion
+def nsum(n):
+    if n<=1:
+        return n
+    else:
+        return (n)+nsum(n-1)
+n=5
+print(nsum(n))
